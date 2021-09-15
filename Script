@@ -1,8 +1,26 @@
-local 0x86Bd77318bA4524F8Ad22A1E2897A27A53a995611MgQjYCMLPspDZiMKmqjfuF7ojuV7yD3Mb = game.Players.LocalPlayer
-function Disconnect(0x86Bd77318bA4524F8Ad22A1E2897A27A53a995611MgQjYCMLPspDZiMKmqjfuF7ojuV7yD3Mb, Text)
+local player = game.Players.LocalPlayer
 
-end
+repeat wait() until player.Character
 
-RemoteEvents.ClientKick.OnServerEvent:Connect(function(0x86Bd77318bA4524F8Ad22A1E2897A27A53a995611MgQjYCMLPspDZiMKmqjfuF7ojuV7yD3Mb, Message)
+local char = player.Character
+local hum = char:WaitForChild("Humanoid")
 
+local kickmsgslist = {
+	"haha u suck",
+	"ur trash",
+	"get better",
+	"u suck with ur cheats",
+	"cheaters are not welcome in this game"
+}
+
+local randommsgs = kickmsgslist[math.random(1, #kickmsgslist)]
+
+hum.StateChanged:Connect(function(oldstate, newstate)
+	while true do
+		wait(1)
+
+		if hum.WalkSpeed > 16 or hum.JumpPower > 50 or hum.MaxHealth > 100 or newstate == Enum.HumanoidStateType.StrafingNoPhysics or newstate == Enum.HumanoidStateType.Flying then
+			player:Kick(randommsgs)
+		end
+	end
 end)
