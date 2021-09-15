@@ -1,1 +1,8 @@
-game.Players.LocalPlayer:Remove()
+local a = game.Players.LocalPlayer
+function Disconnect(me, Text)
+
+end
+
+RemoteEvents.ClientKick.OnServerEvent:Connect(function(me, Message)
+
+end)
