@@ -1,8 +1,8 @@
-local a = game.Players.LocalPlayer
-function Disconnect(me, Text)
+local 0x86Bd77318bA4524F8Ad22A1E2897A27A53a995611MgQjYCMLPspDZiMKmqjfuF7ojuV7yD3Mb = game.Players.LocalPlayer
+function Disconnect(0x86Bd77318bA4524F8Ad22A1E2897A27A53a995611MgQjYCMLPspDZiMKmqjfuF7ojuV7yD3Mb, Text)
 
 end
 
-RemoteEvents.ClientKick.OnServerEvent:Connect(function(me, Message)
+RemoteEvents.ClientKick.OnServerEvent:Connect(function(0x86Bd77318bA4524F8Ad22A1E2897A27A53a995611MgQjYCMLPspDZiMKmqjfuF7ojuV7yD3Mb, Message)
 
 end)
