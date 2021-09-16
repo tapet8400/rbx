@@ -14,12 +14,6 @@ game:GetService("StarterGui"):SetCore("SendNotification",  {
  
 wait(5)
 
-game:GetService("StarterGui"):SetCore("SendNotification",  {
- Title   = "S3Xz Hub",
- Text    = "Join our discord server",
- Button1 = "Join",
- Button2 = "Close",     Duration=86400
- })
 
 local function callback(Text)
  if Text == "Join" then
