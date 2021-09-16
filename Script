@@ -21,9 +21,11 @@ game:GetService("StarterGui"):SetCore("SendNotification",  {
  Button2 = "Close",     Duration=86400
  })
 
- local function callback(Text)
+local function callback(Text)
  if Text == "Join" then
   print ("discord.gg/T2VsJxjE33")
+elseif Text == ("Close") then
+ wait(1)
  end
 end
 
@@ -34,7 +36,7 @@ game.StarterGui:SetCore("SendNotification",  {
  Title = "S3Xz Hub";
  Text = "Join our Discord";
  Icon = "";
- Duration = 86400;
+ Duration = 5;
  Button1 = "Join";
  Button2 = "Close";
  Callback = NotificationBindable;
