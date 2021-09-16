@@ -17,7 +17,12 @@ wait(5)
 
 local function callback(Text)
  if Text == "Join" then
-  print ("discord.gg/T2VsJxjE33")
+  game.StarterGui:SetCore("SendNotification",  {
+ Title = "S3Xz Hub",
+ Text  = "discord.gg/T2VsJxjE33",
+ Duration = 86400,
+ Button1 = "Close"
+ })
 elseif Text == ("Close") then
  wait(1)
  end
