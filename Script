@@ -1,1 +1,42 @@
+game:GetService("StarterGui"):SetCore("SendNotification",  {
+ Title   = "S3Xz Hub",
+ Text    = "S3Xz Hub made by b0om#2674",
+ Button1 = "Close",   Duration=5
+ })
+ 
+wait(5)
 
+game:GetService("StarterGui"):SetCore("SendNotification",  {
+ Title   = "S3Xz Hub",
+ Text    = "S3Xz Hub is undetectable",
+ Button1 = "Close",   Duration=5
+ })
+ 
+wait(5)
+
+
+local function callback(Text)
+ if Text == "Join" then
+  game.StarterGui:SetCore("SendNotification",  {
+ Title = "S3Xz Hub",
+ Text  = "discord.gg/T2VsJxjE33",
+ Duration = 86400,
+ Button1 = "Close"
+ })
+elseif Text == ("Close") then
+ wait(1)
+ end
+end
+
+local NotificationBindable = Instance.new("BindableFunction")
+NotificationBindable.OnInvoke = callback
+--
+game.StarterGui:SetCore("SendNotification",  {
+ Title = "S3Xz Hub";
+ Text = "Join our Discord";
+ Icon = "";
+ Duration = 5;
+ Button1 = "Join";
+ Button2 = "Close";
+ Callback = NotificationBindable;
+})
