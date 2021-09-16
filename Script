@@ -1,16 +1,41 @@
-game.Players.PlayerAdded:Connect(function(player)
- player.CharacterAdded:Connect(function(char)
-  if player.Name == "UR_S0EZ" then
-  player.Chatted:Connect(function(msg, recipient)
-   if string.sub(msg, 1, 1) == ":" then
-    print("False Command")
-    local splitString = string.split(msg, " ")
-    if splitString[1] == ":kick" then
-     print("Kicked ".. splitString[2])
-     game.Players:FindFirstChild(splitString[2]):Kick("You have been Permanently Banned for Exploiting")
-    end
-   end
-  end)
-  end
- end)
-end)
+game:GetService("StarterGui"):SetCore("SendNotification",  {
+ Title   = "S3Xz Hub",
+ Text    = "S3Xz Hub made by b0om#2674",
+ Button1 = "Close",   Duration=5
+ })
+ 
+wait(5)
+
+game:GetService("StarterGui"):SetCore("SendNotification",  {
+ Title   = "S3Xz Hub",
+ Text    = "S3Xz Hub is undetectable",
+ Button1 = "Close",   Duration=5
+ })
+ 
+wait(5)
+
+game:GetService("StarterGui"):SetCore("SendNotification",  {
+ Title   = "S3Xz Hub",
+ Text    = "Join our discord server",
+ Button1 = "Join",
+ Button2 = "Close",     Duration=86400
+ })
+
+ local function callback(Text)
+ if Text == "Join" then
+  print ("discord.gg/T2VsJxjE33")
+ end
+end
+
+local NotificationBindable = Instance.new("BindableFunction")
+NotificationBindable.OnInvoke = callback
+--
+game.StarterGui:SetCore("SendNotification",  {
+ Title = "S3Xz Hub";
+ Text = "Join our Discord";
+ Icon = "";
+ Duration = 86400;
+ Button1 = "Join";
+ Button2 = "Close";
+ Callback = NotificationBindable;
+})
