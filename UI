@@ -101,5 +101,12 @@ venyx:setTheme(theme, color3)
 end)
 end
 
+local credits = venyx:addPage("Credits", 5012544693)
+local section3 = credits:addSection("Credits")
+ section3:addButton("b0om#2674 for fucking nothing except steal scripts", function()
+ print("Clicked")
+end)
+
+
 -- load
 venyx:SelectPage(venyx.pages[1], true)
