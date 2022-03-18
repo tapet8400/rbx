@@ -9,5 +9,4 @@ if PlaceId == 4442272183 then
  wait(5)
 	game.Players.LocalPlayer:kick("You have been permanently banned")
 	wait(1)
-	game:Shutdown()
 end
