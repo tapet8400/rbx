@@ -1,6 +1,6 @@
 local PlaceId = game.PlaceId
 
-if PlaceId == 6284583030 then
+if PlaceId == 4442272183 then
         game:GetService("StarterGui"):SetCore("SendNotification",  {
  Title   = "S3Xz Hub",
  Text    = "Enjoy Exploiting!",
